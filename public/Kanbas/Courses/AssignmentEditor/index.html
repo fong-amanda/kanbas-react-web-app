@@ -1,147 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../../style.css" rel="stylesheet" />
+    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        rel="stylesheet" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0356f84f86.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <table border="0" width="0">
-        <tbody>
+    <div class="nav-account-nav">
+        <div class="navigation-bar">
+            <a href="#"><button><img src="../../NEU logo.png"></br></button></a></br>
+            <a href="/Kanbas/AccountNavigation/index.html"><button><i class="fa-regular fa-user"
+                        style="color: grey"></i></br>Account</button></a></br>
+            <a href="/Kanbas/Dashboard/index.html"><button><i
+                        class="fa-solid fa-gauge"></i></br>Dashboard</button></a></br>
+            <a href="/Kanbas/Courses/CourseNavigation/index.html"><button class="select"><i
+                        class="fa-solid fa-book"></i></br>Courses</button></a></br>
+            <a href="#"><button><i class="fa-regular fa-calendar"></i></br>Calendar</button></a></br>
+            <a href="#"><button><i class="fa-solid fa-inbox"></i></br>Inbox</button></a></br>
+            <a href="#"><button><i class="fa-regular fa-clock"></i></br>History</button></a></br>
+            <a href="#"><button><i class="fa-solid fa-tv"></i></br>Studio</button></a></br>
+            <a href="#"><button><i class="fa-solid fa-arrow-right"></i></br>Commons</button></a>
+            <a href="#"><button><i class="fa-solid fa-question"></i></br>Help</button></a>
+        </div>
+        <div class="right">
+            <div class="header-breadcrump">
+                <div class="three-lines">
+                    <a href="#">
+                        <p style="color: red"> <i class="fa-solid fa-bars"></i></p>
+                    </a>
+                </div>
+                <div>
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" style="color: red">CS4550.126... </a></li>
+                            <li class="breadcrumb-item"><a href="#" style="color: red"">Assignments</a></li>
+                    <li class=" breadcrumb-item active" aria-current="page" style="color: black">A1 = ENV + ...</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+            <div class="grey-sectionnumber-import-export">
+                <div class="section-number">
+                    <div class="courseGrey" style="color: gray"><i>02310_2 Fall 2022 Semest...</i></div>
+                </div>
 
-        <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="#">Northeastern</a></li>
-                <li><a href="/Kanbas/AccountNavigation/index.html">Account</a></li>
-                <li><a href="/Kanbas/Courses/CourseNavigation/index.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/CourseNavigation/index.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/index.html">Home</a></li>
-                <li><a href="#"</a>Modules</li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="/Kanbas/Courses/AssignmentEditor/index.html">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/index.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <form id="text-fields">
-                <input id="text-fields-search-assignment" placeholder="Search for Assignments"/>
-            <button type="button">Group</button>
-            <button type="button">Assignment</button>
-            <select id="select-one-Export">
-                <option value="Export1">Edit Assignment Dates1</option>
-                <option value="Export2">Edit Assignment Dates2</option>
-                <option selected value="EDITDATES">
-                    Edit Assignment Dates</option>
-                <option value="Edit Assignment Dates">Edit Assignment Dates3</option>
-             </select>
-             <hr>
-             <h3>ASSIGNMENTS 40% of Total 
-                <select id="edit">
-                    <option selected value="Edit">Edit</option>
-                    <option value="Speed Grader">Speed Grader</option>
-                    <option value="Duplicate">Duplicate</option>
-                    <option value="Delete">Delete</option>
-                    <option value="Move To...">Move To...</option>
-                    <option value="Sent to...">Send to...</option>
-                    <option value="Copy to...">Copy to...</option>
-                    <option value="Share to Commons">Share to Commons</option>
-                    </select>
-                </h3>
-                <ul>
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">A1 - ENV + HTML</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">A2 - CSS + BOOTSTRAP</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">A3 - JS + React</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">A4 - STATE + REDUX</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">A5 - NODE + SESSION</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">A6 - MONGO + MONGOOSE</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                </ul>
-            <h3>QUIZZES 10% of Total
-                <select id="edit">
-                    <option selected value="Edit">Edit</option>
-                    <option value="Speed Grader">Speed Grader</option>
-                    <option value="Duplicate">Duplicate</option>
-                    <option value="Delete">Delete</option>
-                    <option value="Move To...">Move To...</option>
-                    <option value="Sent to...">Send to...</option>
-                    <option value="Copy to...">Copy to...</option>
-                    <option value="Share to Commons">Share to Commons</option>
-                    </select>
-                 </h3>
-                 <ul>
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">Q1 - HTML</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">Q2 - CSS</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">Q3 - JS.ES6</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">Q4 - NODE</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                    <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">A5 - MONGO</a></li>
-                    <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet                </ul>
-             <h3>EXAMS 20% of Total
-                <select id="edit">
-                    <option selected value="Edit">Edit</option>
-                    <option value="Speed Grader">Speed Grader</option>
-                    <option value="Duplicate">Duplicate</option>
-                    <option value="Delete">Delete</option>
-                    <option value="Move To...">Move To...</option>
-                    <option value="Sent to...">Send to...</option>
-                    <option value="Copy to...">Copy to...</option>
-                    <option value="Share to Commons">Share to Commons</option>
-                    </select>
-             </h3>
-             <ul>
-                <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">Midterm</a></li>
-                <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-                <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">Final</a></li>
-                <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
+                <div class="assignmentSearch">
+                    <input type="text" class="form-control " placeholder="Search For Assignment">
 
-            </ul>
-             <h3>PROJECTS 30% of Total
-                <select id="edit">
-                    <option selected value="Edit">Edit</option>
-                    <option value="Speed Grader">Speed Grader</option>
-                    <option value="Duplicate">Duplicate</option>
-                    <option value="Delete">Delete</option>
-                    <option value="Move To...">Move To...</option>
-                    <option value="Sent to...">Send to...</option>
-                    <option value="Copy to...">Copy to...</option>
-                    <option value="Share to Commons">Share to Commons</option>
-                    </select>
-             </h3>
-             <ul>
-                <li><a href="/Kanbas/Courses/AssignmentEditor/edit.html">Project</a></li>
-                <a href="/Kanbas/Courses/AssignmentEditor/edit.html">Multiple Modules</a> | Not available yet
-            </ul>
-        </td>
-        </body>
-    </html>
+                </div>
+
+
+                <div class="button-sizing" style="padding-left: 55%">
+                    <button type="button" class="btn btn-light" style="width: 110px"><i
+                            class="fa-solid fa-plus"></i>Group</button>
+                </div>
+                <div class="button-sizing">
+                    <button type="button" class="btn btn-danger float-end" style="width: 160px"><i
+                            class="fa-solid fa-plus"></i>Assignment</button>
+                </div>
+                <div class="button-sizing">
+                    <button type="button" class="btn btn-light float-end" style="width: 33px"><i
+                            class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+
+            <div class="profile-nav">
+                <div class="account-nav-bar">
+
+                    <a href="../../Courses/Home/index.html"><button>Home</a></button>
+                    <a href="../Modules/index.html"><button>Modules</a></button>
+                    <a href="#"><button>Piazza</a></button>
+                    <a href="#"><button>Zoom Meetings</a></button>
+                    <a href="../../Courses/AssignmentEditor/index.html" class="black-words"><button
+                            class="left-border">Assignments</a></button>
+                    <a href="#"><button>Quizzes</a></button>
+                    <a href="../Grades/index.html"><button>Grades</a></button>
+                    <a href="#"><button>People</a></button>
+                    <a href="#"><button>Panopto Video</a></button>
+                    <a href="#"><button>Discussions</a></button>
+                    <a href="#"><button>Announcements</a></button>
+                    <a href="#"><button>Pages</a></button>
+                    <a href="#"><button>Files</a></button>
+                    <a href="#"><button>Rubrics</a></button>
+                    <a href="#"><button>Outcomes</a></button>
+                    <a href="#"><button>Collaborations</a></button>
+                    <a href="#"><button>Syllabus</a></button>
+
+                </div>
+                <ul class="list-group my-3">
+                    <li class="list-group-item list-group-item-secondary"><i class="fa fa-ellipsis-v"
+                            aria-hidden="true"></i><i class="fa-solid fa-caret-down"></i>
+                            Assignments<span class="float-end"><span style="border-radius: 10px; border: solid; border-width: 1px;">&nbsp;&nbsp;40% of Total&nbsp;&nbsp;</span>&nbsp&nbsp<i class="fa-solid fa-plus"></i><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span></li>
+                    <li class="list-group-item"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><i
+                        class="fa-regular fa-pen-to-square" style="color: green;"></i>
+                        LEARNING OBJECTIVES <i class="fa fa-ellipsis-v float-end" aria-hidden="true"></i><i class="fa-solid fa-check float-end text-success"></i></li>
+                    <li class="list-group-item"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><i
+                        class="fa-regular fa-pen-to-square" style="color: green;"></i>
+                        <span class="px-3"><a href="../../Courses/AssignmentEditor/index.html" style="color: black; text-decoration: none;">Learn how to create user interfaces with HTML</a>
+                        </span><i class="fa fa-ellipsis-v float-end" aria-hidden="true"></i><i class="fa-solid fa-check float-end text-success"></i>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><i
+                        class="fa-regular fa-pen-to-square" style="color: green;"></i>
+                        <span class="px-3"><a href="../../Courses/AssignmentEditor/index.html" style="color: black; text-decoration: none;">Keep working on assignment 1</a>
+                        </span><i class="fa fa-ellipsis-v float-end" aria-hidden="true"></i><i class="fa-solid fa-check float-end text-success"></i>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><i
+                        class="fa-regular fa-pen-to-square" style="color: green;"></i>
+                        <span class="px-3"><a href="../../Courses/AssignmentEditor/index.html" style="color: black; text-decoration: none;">Deploy the assignment to Netlify</a>
+                        </span><i class="fa fa-ellipsis-v float-end" aria-hidden="true"></i><i class="fa-solid fa-check float-end text-success"></i>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><i
+                        class="fa-regular fa-pen-to-square" style="color: green;"></i>
+                        <span class="px-3">Getting started with the 1st assignment</span><i class="fa fa-ellipsis-v float-end" aria-hidden="true"></i><i class="fa-solid fa-check float-end text-success"></i>
+                    </li>
+                    <li class="list-group-item"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><i
+                        class="fa-regular fa-pen-to-square" style="color: green;"></i>
+                        READING<i class="fa fa-ellipsis-v float-end" aria-hidden="true"></i><i class="fa-solid fa-check float-end text-success"></i></li>
+                    <li class="list-group-item"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><i
+                        class="fa-regular fa-pen-to-square" style="color: green;"></i>
+                        <span class="px-3">Full Stack Developer - Chapter 1 - Introduction</span><i class="fa fa-ellipsis-v float-end" aria-hidden="true"></i><i class="fa-solid fa-check float-end text-success"></i>
+                    </li>
+     
+                    
+
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+.navigation-bar {
+  height: 100%;
+  width: 85px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.navigation-bar i {
+  color: red;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navigation-bar button {
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  width: 75px;
+  height: 75px;
+  border: none;
+  text-align: center;
+}
+
+.navigation-bar button:hover {
+  background-color: white;
+  color: red;
+}
+
+.navigation-bar img {
+  width: 65px;
+  height: 65px;
+}
+
+.navigation-bar .select {
+  background-color: white;
+  color: red;
+
+}
+
+/** Account nav bar*/
+.account-nav-bar {
+  color: white;
+  font-size: 14px;
+  width: 190px;
+  height: 75px;
+  border: none;
+  text-align: left;
+
+}
+
+.account-nav-bar button {
+  color: black;
+  background-color: white;
+  font-size: 14px;
+  width: 120px;
+  border: none;
+  text-align: left;
+  margin-bottom: 15px;
+  color: red;
+}
+
+.account-nav-bar a {
+  color: red;
+  text-decoration: none;
+  text-align: left;
+}
+
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/** flex */
+.nav-account-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.right {
+  width: 100%;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.profile-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.right i {
+  margin-right: 25px;
+}
+
+.right .account-nav-bar .left-border {
+  border-left: solid;
+  border-color: black;
+}
+
+.right .account-nav-bar .black-words {
+  color: black;
+  margin-left: 8px;
+
+}
+
+.profile {
+  margin-top: 30px;
+  width: 300px;
+
+}
+
+.profile i {
+  font-size: 100px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.profile h1 {
+  font-size: 35px;
+  margin-bottom: 35px;
+  font-weight: normal;
+
+}
+
+.profile h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.profile p {
+  margin-bottom: 30px;
+}
+
+.profile a {
+  color: red;
+  text-decoration: none;
+  text-align: left;
+}
+
+.profile i {
+  font-size: 4-px;
+}
+
+.margin-contact-link {
+  margin-top: 30px;
+}
+
+/** Course cards*/
+.courses-card {
+  width: 100%;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.courses-card h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.courses-card .cards {
+  margin-left: 60px;
+  text-decoration: none;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.nav-account-nav .courses-card .card {
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.courseGrey {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 4px;
+}
+
+.header-breadcrump {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-breadcrump .three-lines {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+}
+
+.assignment-edit .container .col-left {
+  width: 150px;
+}
+
+.grey-sectionnumber-import-export {
+  display: flex;
+
+}
+
+
+.button-sizing {
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  align-items: center;
+}
+
+.profile-nav .grades {
+  margin-left: 50px;
+}
+
+.table {
+  margin-top: 40px;
+  margin-left: 8px;
+
+
+}
+
+.list-group my-3 {
+  border-radius: 0px;
+}
+
+.course-stat-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.modules-float {
+  margin-left: 100px;
+
+}
+.left-side-bar {
+  margin-left:  250px;
+}
