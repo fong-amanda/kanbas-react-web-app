@@ -237,3 +237,74 @@
 .left-side-bar {
   margin-left:  250px;
 }
+
+.x {
+  margin-left: 80%;
+  margin-top: 30px;
+  font-size: 40px;
+  color: black;
+}
+
+.navigation-bar-condensed button {
+  color: red;
+  background-color: white;
+  font-size: 14px;
+  width: 150px;
+  height: 75px;
+  border: none;
+  text-align: left;
+  margin-left: 60px;
+}
+
+.navigation-bar-condensed i {
+
+font-size: xx-large;
+margin-right: 30px;
+
+}
+
+.black-nav-bar {
+  font-size: x-large;
+  background-color: black;
+  color: white;
+
+}
+
+.black-nav-bar i {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+
+
+.account-nav-bar-condensed {
+  color: white;
+  font-size: 14px;
+  width: 190px;
+  height: 75px;
+  border: none;
+  text-align: left;
+  margin-top: 30px;
+
+
+}
+
+.account-nav-bar-condensed button {
+  background-color: white;
+  font-size: 14px;
+  width: 120px;
+  border: none;
+  text-align: left;
+  margin-bottom: 15px;
+  color: red;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.account-nav-bar-condensed a {
+  text-align: left;
+  color: red;
+  text-decoration: none;
+}
