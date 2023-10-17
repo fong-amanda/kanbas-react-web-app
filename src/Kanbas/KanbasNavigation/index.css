@@ -1,0 +1,19 @@
+.navigation-bar {
+  border-radius: 0px;
+  text-align: center;
+}
+
+.navigation-bar a {
+  
+  background: black;
+  color: white;
+  border-radius: 0px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 0px;
+}
+
+.navigation-bar a.list-group-item.active {
+  background-color: white;
+  color: red;
+}
