@@ -7,10 +7,26 @@
   
   background: black;
   color: white;
-  border-radius: 0px;
   border: none;
   margin-left: 10px;
   border-radius: 0px;
+}
+
+.n-symbol {
+  text-align: center;
+  background: black;
+  margin-left: 10px;
+  color: white;
+  font-size: 50px;
+
+}
+
+.n-symbol img {
+  width: 80px;
+
+}
+.navigation-bar .symbol {
+  color: red;
 }
 
 .navigation-bar a.list-group-item.active {

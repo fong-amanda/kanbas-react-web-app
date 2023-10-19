@@ -18,9 +18,10 @@ function AssignmentEditor() {
   };
   return (
     <div>
-      <h1>Assignment Editor {assignment.title}</h1>
+      <h6>Assignment Name</h6>
       <input value={assignment.title}
              className="form-control mb-2" />
+             <hr/>
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
             className="btn btn-warning">
         Cancel
