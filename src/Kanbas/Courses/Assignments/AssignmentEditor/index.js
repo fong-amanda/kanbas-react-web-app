@@ -20,20 +20,21 @@ function AssignmentEditor() {
     <div>
       <h6>Assignment Name</h6>
       <input value={assignment.title}
-             className="form-control mb-2" />
-             <hr/>
+        className="form-control mb-2" />
+      <hr />
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-warning">
+        className="btn btn-warning">
         Cancel
       </Link>
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-danger">
+        className="btn btn-danger">
         Delete
       </Link>
       <button onClick={handleSave} className="btn btn-success me-2">
         Save
       </button>
     </div>
+
   );
 }
 
