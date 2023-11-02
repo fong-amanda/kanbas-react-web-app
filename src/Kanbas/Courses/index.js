@@ -17,8 +17,9 @@ function Courses({courses}) {
 
         <div>
             <BreadCrumb />
-            <hr />
             <div>
+            <hr />
+
                 <div className="container">
                     <div className="row">
                         <div className="col">

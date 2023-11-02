@@ -8,7 +8,7 @@ function Assignments() {
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
   return (
-    <div>
+    <div style={{ width: 800 }}>
       <h2>Assignments for course {courseId}</h2>
 
 

@@ -11,7 +11,7 @@ function KanbasNavigation() {
   <FaCalendar />, <FaInbox />, <FaClock />, <FaTv />, <FaArrowRight />, <FaQuestion />]
 
   return (
-    <div className="list-group navigation-bar" style={{ width: 120 }}>
+    <div className="list-group navigation-bar" style={{width: 120}}>
       <div className="n-symbol">
         <img src={neu} alt="neu" />
       </div>

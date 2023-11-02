@@ -1,6 +1,9 @@
 .navigation-bar {
   border-radius: 0px;
   text-align: center;
+  margin-left: 10px;
+  background: black;
+  height: 100vh;
 }
 
 .navigation-bar a {
@@ -8,7 +11,6 @@
   background: black;
   color: white;
   border: none;
-  margin-left: 10px;
   border-radius: 0px;
 }
 

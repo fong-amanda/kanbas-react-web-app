@@ -23,7 +23,7 @@ function Dashboard(
             <div className="p-2">
               <input style={{ width: 300 }} value={course.name} className="form-control" onChange={(e) => setCourse({ ...course, name: e.target.value })} />
             </div>
-            <div className="p-2 ">
+            <div className="p-2 " style={{marginLeft: 280}}>
               <button onClick={addNewCourse} class="btn btn-success">
                 Add
               </button>
