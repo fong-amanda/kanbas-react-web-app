@@ -4,4 +4,14 @@
 
 .card {
     flex-wrap: wrap;
+
+}
+
+.card .card-body .card-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.new-course .list-group-item {
+    flex-wrap: wrap;
 }

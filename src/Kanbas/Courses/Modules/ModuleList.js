@@ -19,42 +19,49 @@ function ModuleList() {
   const dispatch = useDispatch();
 
   return (
-    <ul className="list-group">
+    <ul className="list-group" style={{ width: 800 }}>
       <li className="list-group-item">
-        <button onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+        <div className="d-flex">
+          <div className="p-2">
+            <input className="list-group-item" value={module.name}
+              onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))
+              } /> <br />
+            <textarea className="list-group-item" value={module.description}
+              onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))
+              } />
+          </div>
+          <div className="buttons p-2">
+            <button className="btn btn-primary" onClick={() => dispatch(updateModule(module))}>
 
-          Add</button>
-        <button onClick={() => dispatch(updateModule(module))}>
+              Update
+            </button>
+            <button className="btn btn-success" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
 
-          Update
-        </button>
-
-
-        <input value={module.name}
-          onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))
-          } />
-        <textarea value={module.description}
-          onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))
-          }/>
+              Add</button>
+          </div>
+        </div>
       </li>
+
 
       {modules
         .filter((module) => module.course === courseId)
         .map((module, index) => (
-          <li key={index} className="list-group-item">
-            <button
-              onClick={() => dispatch(setModule(module))}>
-              Edit
-            </button>
-
-            <button
-              onClick={() => dispatch(deleteModule(module._id))}>
-              Delete
-            </button>
-
-            <h3>{module.name}</h3>
-            <p>{module.description}</p>
-            <p>{module._id}</p>
+          <li key={index} className="list-group-item d-flex">
+            <div className="p-2">
+              <h3>{module.name}</h3>
+              <p>{module.description}</p>
+              <p>{module._id}</p>
+            </div>
+            <div className="buttons p-2">
+              <button className="btn btn-danger"
+                onClick={() => dispatch(deleteModule(module._id))}>
+                Delete
+              </button>
+              <button className="btn btn-success"
+                onClick={() => dispatch(setModule(module))}>
+                Edit
+              </button>
+            </div>
           </li>))}
     </ul>
 
