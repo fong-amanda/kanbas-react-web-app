@@ -23,13 +23,13 @@ function Dashboard(
             <div className="p-2">
               <input style={{ width: 300 }} value={course.name} className="form-control" onChange={(e) => setCourse({ ...course, name: e.target.value })} />
             </div>
-            <div className="p-2 " style={{marginLeft: 280}}>
-              <button onClick={addNewCourse} class="btn btn-success">
+            <div className="p-2 " style={{ marginLeft: 280 }}>
+              <button onClick={addNewCourse} className="btn btn-success">
                 Add
               </button>
               &nbsp;&nbsp;
 
-              <button onClick={updateCourse} class="btn btn-primary">
+              <button onClick={updateCourse} className="btn btn-primary">
                 Update
               </button>
             </div>
@@ -39,16 +39,15 @@ function Dashboard(
         </div>
       </h3>
       <div className="list-group" style={{ width: 800 }}>
-        {courses.map((course) => (
-          <Link key={course._id} to={`/Kanbas/Courses/${course._id}`}
+        {courses.map((course, index) => (
+          <Link key={index} to={`/Kanbas/Courses/${course._id}`}
             className="list-group-item">
-
-
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title"><a href="../Courses/AssignmentEditor/index.html">{course.name}</a>
-                  <buttons class="float-end">
-                    <button class="btn btn-warning"
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">
+                 {course.name}
+                  <div className="float-end">
+                    <button className="btn btn-warning"
                       onClick={(event) => {
                         event.preventDefault();
                         setCourse(course);
@@ -56,14 +55,14 @@ function Dashboard(
                       Edit
                     </button>
                     &nbsp;&nbsp;
-                    <button class="btn btn-danger"
+                    <button className="btn btn-danger"
                       onClick={(event) => {
                         event.preventDefault();
                         deleteCourse(course._id);
                       }}>
                       Delete
                     </button>
-                  </buttons>
+                  </div>
 
                 </h5>
 

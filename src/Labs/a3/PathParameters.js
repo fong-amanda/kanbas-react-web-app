@@ -1,6 +1,8 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Add from "./Add";
 function PathParameters() {
+
+  
   return (
     <div>
       <h2>Path Parameters</h2>

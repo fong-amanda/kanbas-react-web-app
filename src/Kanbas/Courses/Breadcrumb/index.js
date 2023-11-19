@@ -18,7 +18,7 @@ function BreadCrumb() {
           <nav
             aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><FaBars /> &nbsp; &nbsp; {course.number}</li>
+              <li class="breadcrumb-item"><FaBars /> &nbsp; &nbsp; {course._id}</li>
               <li class="breadcrumb-item list-group-item-secondary" aria-current="page"
               >Home</li>
             </ol>
@@ -34,7 +34,7 @@ function BreadCrumb() {
           <nav
             aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><FaBars /> &nbsp; &nbsp; {course.number}</li>
+              <li class="breadcrumb-item"><FaBars /> &nbsp; &nbsp; {course._id}</li>
               <li class=" breadcrumb-item list-group-item-secondary" aria-current="page"
               >Modules</li>
             </ol>
