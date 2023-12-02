@@ -11,7 +11,7 @@ function Signin() {
     try {
       const user = await client.signIn({ username, password });
       navigate("/project/account");
-      //   console.log(user);
+        console.log(user);
     } catch (error) {
       setError(error.message);
     }
