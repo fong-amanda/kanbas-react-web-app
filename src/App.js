@@ -9,7 +9,6 @@ import Project from "./project";
 function App() {
    return (
       <HashRouter>
-
          <div>
             <Routes>
                <Route path="/" element={<Navigate to="/Labs" />} />
