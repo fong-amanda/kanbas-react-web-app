@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import * as client from "./client";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
 function Account() {
+  const { id } = useParams();
   const [user, setUser] = useState(null);
+  const findUserById = async (id) => {
+    const user = await client.findUserById(id);
+    setUser(user);
+  };
+
   const navigate = useNavigate();
   const fetchUser = async () => {
     try {
@@ -23,8 +29,11 @@ function Account() {
     await client.updateUser(user._id, user);
   };
   useState(() => {
-    fetchUser();
-
+    if (id) {
+      findUserById(id);
+    } else {
+      fetchUser();
+    }
   }, []);
 
   /*

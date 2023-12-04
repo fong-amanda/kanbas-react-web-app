@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { BsFillCheckCircleFill, BsPencil, BsPlusCircleFill, BsTrash3Fill }
     from "react-icons/bs";
 import * as client from "./client";
+import { Link } from 'react-router-dom';
+
 function UserTable() {
     const [users, setUsers] = useState([]);
     const deleteUser = async (user) => {
@@ -84,7 +86,9 @@ function UserTable() {
                 <tbody>
                     {users.map((user) => (
                         <tr key={user._id}>
-                            <td>{user.username}</td>
+                            <Link to={`/project/account/${user._id}`}>
+                                <td>{user.username}</td>
+                            </Link>
                             <td>{user.firstName}</td>
                             <td>{user.lastName}</td>
                             <td className="text-nowrap">
@@ -93,7 +97,7 @@ function UserTable() {
                                     <BsPencil onClick={() => selectUser(user)} />
                                 </button>
                                 <button className="btn btn-danger me-2">
-                                    <BsTrash3Fill onClick={() => deleteUser(user)}/>
+                                    <BsTrash3Fill onClick={() => deleteUser(user)} />
                                 </button>
                             </td>
                         </tr>))}

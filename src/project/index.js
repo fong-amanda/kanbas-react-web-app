@@ -18,6 +18,7 @@ function Project() {
         <Routes>
           <Route path="/admin/users" element={<UserTable />} />
           <Route path="/" element={<Navigate to="/project/signin" />} />
+          <Route path="/account/:id" element={<Account />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/account" element={<Account />} />
